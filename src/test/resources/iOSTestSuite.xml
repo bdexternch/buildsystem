@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MIY_development">
+  <parameter name="platformName" value="iOS"/>
+  <parameter name="appDir" value="/Users/testsysteme/.jenkins/workspace/MIY_development"/>
+  <parameter name="xcodeOrgId" value="VU796VE2U4"/>
+  <parameter name="mic" value=""/>
+  <parameter name="soundCheckAccuracy" value="0.05"/>
+  <parameter name="saveSoundCheck" value="false"/>
+  <parameter name="timeout" value="20"/>
+  <parameter name="webviewTimeout" value="20"/>
+  <test name="iPhone_7" enabled="false">
+    <parameter name="deviceName" value="iPhone_7"/>
+    <parameter name="udid" value="627005aeb45089533edd9a5c42c8c71e5afddec5"/>
+    <parameter name="headphone" value="Aventho Test iOS2"/>
+    <classes>
+      <class name="de.ios.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="iPhone 6 Schwarz" enabled="true">
+    <parameter name="deviceName" value="iPhone 6 Schwarz"/>
+    <parameter name="udid" value="76c2ffdfe10803b9036a2d84dede85a9e8d1de47"/>
+    <parameter name="headphone" value="Aventho Test iOS1"/>
+    <classes>
+      <class name="de.ios.tests.TestCases"/>
+    </classes>
+  </test>
+
+    <test name="iPhone 6" enabled="false"> 
+        <parameter  name="deviceName" value="iPhone 6"/> 
+        <parameter  name="udid" value="10d13e2ecd237266b06ca13e84628d3423b00c2a"/> 
+        <parameter  name="headphone" value="Aventho Test iOS3"/> 
+        <classes> 
+            <class name="de.ios.tests.TestCases"/> 
+        </classes> 
+    </test> 
+</suite>

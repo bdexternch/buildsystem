@@ -1,0 +1,46 @@
+group 'com.beyerdynamic'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+
+dependencies {
+    compile 'io.appium:java-client:5.0.4'
+
+    // https://mvnrepository.com/artifact/com.relevantcodes/extentreports
+    compile group: 'com.relevantcodes', name: 'extentreports', version: '2.41.2'
+
+    testCompile group: 'org.testng', name: 'testng', version: '6.13.1'
+}
+
+task recordingDevices(type: JavaExec) {
+    classpath sourceSets.test.runtimeClasspath
+    main = "com.beyerdynamic.util.AudioDeviceHelper"
+}
+
+task appiumAndroid(type:Test) {
+    useTestNG() {
+        suites './src/test/resources/AndroidTestSuite.xml'
+        parallel = 'tests'
+        threadCount = 15
+        useDefaultListeners = true
+        testLogging.events = ['PASSED', 'STARTED', 'FAILED', 'SKIPPED']
+    }
+}
+
+task appiumIOS(type:Test) {
+    useTestNG() {
+        suites './src/test/resources/iOSTestSuite.xml'
+        parallel = 'tests'
+        threadCount = 15
+        useDefaultListeners = true
+        testLogging.events = ['PASSED', 'STARTED', 'FAILED', 'SKIPPED']
+    }
+}

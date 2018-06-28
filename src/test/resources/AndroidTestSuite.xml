@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MIY-Android-CES">
+  <parameter name="platformName" value="Android"/>
+  <parameter name="appDir" value="/Users/testsysteme/.jenkins/workspace/MIY-Android-CES/app/build/outputs/apk/development/debug"/>
+  <parameter name="appPackage" value="com.beyerdynamic.android.dev"/>
+  <parameter name="appActivity" value="com.beyerdynamic.android.SplashActivity"/>
+  <parameter name="mic" value=""/>
+  <parameter name="soundCheckAccuracy" value="0.105"/>
+  <parameter name="saveSoundCheck" value="false"/>
+  <parameter name="timeout" value="15"/>
+  <parameter name="webviewTimeout" value="20"/>
+  <test name="Samsung Note 8" enabled="false">
+    <parameter name="deviceName" value="Samsung Note 8"/>
+    <parameter name="udid" value="ce0717173a24707b0d7e"/>
+    <parameter name="headphone" value="00:20:BB:70:00:77"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="OnePlus" enabled="false">
+    <parameter name="deviceName" value="OnePlus"/>
+    <parameter name="udid" value="e7da2f32"/>
+    <parameter name="headphone" value="00:20:BB:70:00:BE"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="galaxy s8" enabled="false">
+    <parameter name="deviceName" value="galaxy s8"/>
+    <parameter name="udid" value="988a163136525a4e46"/>
+    <parameter name="headphone" value="00:22:bb:70:29:c0"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Sony Z Ultra" enabled="false">
+    <parameter name="deviceName" value="Sony Z Ultra"/>
+    <parameter name="udid" value="EP7331CNLH"/>
+    <parameter name="headphone" value="00:20:BB:70:2F:CB"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Sony Xperia" enabled="false">
+    <parameter name="deviceName" value="Sony Xperia"/>
+    <parameter name="udid" value="CB512ENXPQ"/>
+    <parameter name="headphone" value="00:20:BB:70:2F:CB"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Google Pixel 2" enabled="false">
+    <parameter name="deviceName" value="Google Pixel 2"/>
+    <parameter name="udid" value="FA7A11A02143"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Samsung A3" enabled="false">
+    <parameter name="deviceName" value="Samsung A3"/>
+    <parameter name="udid" value="3100485c5a64c24f"/>
+    <parameter name="headphone" value="00:20:bb:70:04:ab"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Nexus 6P" enabled="false">
+    <parameter name="deviceName" value="Nexus 6P"/>
+    <parameter name="udid" value="ENU7N15B03000331"/>
+    <parameter name="headphone" value="00:20:BB:70:00:1F"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Samsung Galaxy mini S5" enabled="false">
+    <parameter name="deviceName" value="Samsung Galaxy mini S5"/>
+    <parameter name="udid" value="5200f355404ac2a3"/>
+    <parameter name="headphone" value="Aventho wireless"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="OnePlus 5" enabled="false">
+    <parameter name="deviceName" value="OnePlus 5"/>
+    <parameter name="udid" value="c2e7ddf6"/>
+    <parameter name="headphone" value="00:20:BB:70:00:A3"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="HUAWEI P10 lite" enabled="false">
+    <parameter name="deviceName" value="HUAWEI P10 lite"/>
+    <parameter name="udid" value="2XJDU17B06000716"/>
+    <parameter name="headphone" value="00:20:BB:70:00:A3"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Nexus 5X" enabled="false">
+    <parameter name="deviceName" value="Nexus 5X"/>
+    <parameter name="udid" value="010854d1b26ca308"/>
+    <parameter name="headphone" value="00:22:BB:70:2A:1A"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Huawei p9 Mate" enabled="false">
+    <parameter name="deviceName" value="Huawei p9 Mate"/>
+    <parameter name="udid" value="AHK0217812000385"/>
+    <parameter name="headphone" value="00:22:BB:70:2A:1A"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="LG" enabled="false">
+    <parameter name="deviceName" value="LG"/>
+    <parameter name="udid" value="LGH8705e959d70"/>
+    <parameter name="headphone" value="00:20:BB:70:2F:CB"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+  <test name="Huawei P8lite" enabled="false">
+    <parameter name="deviceName" value="Huawei P8lite"/>
+    <parameter name="udid" value="W3D7N16A08007089"/>
+    <parameter name="headphone" value="00:20:BB:70:2F:CB"/>
+    <classes>
+      <class name="de.android.tests.TestCases"/>
+    </classes>
+  </test>
+
+    <test name="LG V30" enabled="true"> 
+        <parameter  name="deviceName" value="LG V30"/> 
+        <parameter  name="udid" value="LGH93081b57e85"/> 
+        <parameter  name="headphone" value="00:22:BB:70:31:8C"/>
+        <classes> 
+            <class name="de.android.tests.TestCases"/> 
+        </classes> 
+    </test> 
+</suite>
